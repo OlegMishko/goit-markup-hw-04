@@ -17,7 +17,9 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --portfolio-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --footer-main-color: #ffffff;
 }
+
 /* Обнуление */
 p,
 h1,
@@ -165,10 +167,10 @@ body {
     ),
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  /* height: 600px; */
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-top: 200px;
@@ -223,9 +225,10 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  /* display: flex; */
+  display: flex;
   align-items: center;
-  padding: 25px 100px 25px 100px;
+  justify-content: center;
+  /* padding: 25px 100px 25px 100px; */
 }
 
 .benefits-subtitle {
@@ -372,8 +375,9 @@ team-item-text */
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: #afb1b8;
-  padding: 16px 32px;
 
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -423,7 +427,7 @@ team-item-text */
 .footer-address {
 }
 .address-text {
-  color: #ffffff;
+  color: var(--footer-main-color);
   margin-bottom: 9px;
   display: block;
 }
@@ -449,7 +453,7 @@ team-item-text */
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--footer-main-color);
   margin-bottom: 20px;
 }
 
@@ -471,7 +475,7 @@ team-item-text */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #afb1b8;
+  color: var(--footer-main-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -481,7 +485,7 @@ team-item-text */
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--footer-main-color);
 }
 
 /* -------------------PORTFOLIO ---------------------- */
